@@ -149,7 +149,7 @@ def finalize_360video(video_path, title, artist, date_today, ydl_url, out_video_
                     "metadata:g:1": f"artist={artist}", 
                     "metadata:g:2": f"date={date_today}", 
                     "metadata:g:3": f"""description=SSが作成したVR空間作成ツールにて生成
-                    Google Colabにてエンコード : https://colab.research.google.com/drive/1fxLW6Z2YBtDI8ux0DNvxavZ5xX68oiZD?usp=sharing
+                    Google Colabにてエンコード : https://colab.research.google.com
                     original : {ydl_url}"""}
 
     out_video_path = out_video_path.replace(' ', '_')
@@ -177,7 +177,7 @@ def finalize_video(video_path, title, artist, date_today, ydl_url, out_video_pat
                     "metadata:g:1": f"artist={artist}", 
                     "metadata:g:2": f"date={date_today}", 
                     "metadata:g:3": f"""description=SSが作成したVR空間作成ツールにて生成
-                    Google Colabにてエンコード : https://colab.research.google.com/drive/1fxLW6Z2YBtDI8ux0DNvxavZ5xX68oiZD?usp=sharing
+                    Google Colabにてエンコード : https://colab.research.google.com
                     original : {ydl_url}"""}
 
     out_video_path = out_video_path.replace(' ', '_')
