@@ -44,7 +44,7 @@ def MultipleAcceleration360(title=None, ydl_url=None, aspectfill=False, a=None, 
     print('finish!')
 
 
-def MultipleAccelerationStandard(title=None, ydl_url=None, base_pixel=None, a=None, b=None, peak_time=None, speed_lambda=None, start_lambda=None, rainbow=False, rainbow_saturation=1, rainbow_flick=1, codec='libx264'):
+def MultipleAccelerationStandard(title=None, download_switch=True, ydl_url=None, base_pixel=None, a=None, b=None, peak_time=None, speed_lambda=None, start_lambda=None, rainbow=False, rainbow_saturation=1, rainbow_flick=1, codec='libx264'):
     print('''55 Auto Multiple Acceralation Generater:
     \t入力の動画をタイル状に多重加速して、動画にするぞ\n''')
 
@@ -57,7 +57,10 @@ def MultipleAccelerationStandard(title=None, ydl_url=None, base_pixel=None, a=No
     
     date_today = datetime.date.today().strftime('%Y/%m/%d')
     artist = '55 Auto MultipleAcceleration Generater'
-    video_path = videodownload.video_download(ydl_url)
+    if download_switch:
+      video_path = videodownload.video_download(ydl_url)
+    else:
+      video_path = ydl_url
     aspect_b, aspect_a = get_info.get_aspect(video_path)
 
     out_w, out_h = base_pixel * (aspect_b / aspect_a), base_pixel
