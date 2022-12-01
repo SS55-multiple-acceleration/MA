@@ -56,7 +56,7 @@ def MultipleAccelerationStandard(title=None, download_switch=True, ydl_url=None,
     b = int(input('多重加速の横の動画数を入力してください（例: 4 -> 最終動画に、横に4つの動画が並ぶ）')) if b == None else b 
     
     date_today = datetime.date.today().strftime('%Y/%m/%d')
-    artist = '55 Auto MultipleAcceleration Generater'
+    artist = '55 Auto MultipleAcceleration Generater - by ss y4ttaze'
     if download_switch:
       video_path = videodownload.video_download(ydl_url)
     else:
